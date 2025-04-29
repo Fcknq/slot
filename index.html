@@ -1,18 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Крутить барабан</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Слот-машина</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h1>Крути барабан!</h1>
-  <div class="wheel-container">
-    <img id="wheel" src="images/prize1.png" alt="Кейс">
+  <div class="slot-mask">
+    <div class="slot-container">
+      <div class="slot-line" id="slot-line"></div>
+    </div>
+    <div class="center-line"></div>
   </div>
   <button id="spin">Крутить!</button>
+  <div id="result"></div>
 
+  <div class="showcase">
+    <div class="showcase-item">
+      <img src="images/rose.png" alt="Роза" />
+      <div>50%</div>
+    </div>
+    <div class="showcase-item">
+      <img src="images/chocolate.png" alt="Шоколад" />
+      <div>30%</div>
+    </div>
+    <div class="showcase-item">
+      <img src="images/oscar.png" alt="Оскар" />
+      <div>20%</div>
+    </div>
+  </div>
+
+  <audio id="winSound" src="win.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
